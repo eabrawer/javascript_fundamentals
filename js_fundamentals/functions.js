@@ -1,59 +1,81 @@
 // Exercises: Functions
 
 // EXERCISE: The Fortune Teller
+fortuneteller = function(num_children, partner, place, job) {
+	return "You will be a " + job + " in " + place +", and married to " + partner +
+ 	" with " + num_children + " kids.";
+}
 
-// Why pay a fortune teller when you can just program your fortune yourself?
-
-// Write a function named tellFortune that:
-// takes 4 arguments: number of children, partner's name, geographic location, job title.
-// outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
-// Call that function 3 times with 3 different values for the arguments.
+fortuneteller(5, "Anne", "Toronto", "policeman")
+fortuneteller(1, "Dana", "Paris", "doctor")
+fortuneteller(2, "Karin", "Tokyo", "programmer")
 
 // EXERCISE: The Age Calculator
+calculateAge = function(birth_year, current_year) {
+	return "you are either " + (current_year - birth_year) + " or " 
+			+ (current_year - birth_year -1) + ".";
+}
 
-// Forgot how old you are? Calculate it!
+calculateAge(1990, 2013)
+calculateAge(1988, 2013)
+calculateAge(1985, 2013)
 
-// Write a function named calculateAge that:
-// takes 2 arguments: birth year, current year.
-// calculates the 2 possible ages based on those years.
-// outputs the result to the screen like so: "You are either NN or NN"
-// Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
+new Date().getFullYear()
+
 
 // EXERCISE: The Lifetime Supply Calculator
+calculateSupply = function(c_age, m_age, per_day) {
+	return "You will need " + 2 * ((m_age - c_age) *365) + " to last you until the ripe old age of "
+	 + m_age + ".";
+}
 
-// Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
+calculateSupply( 22, 80, 2)
+calculateSupply( 22, 70, 3)
+calculateSupply( 22, 65, 3)
 
-// Write a function named calculateSupply that:
-// takes 2 arguments: age, amount per day.
-// calculates the amount consumed for rest of the life (based on a constant max age).
-// outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
-// Call that function three times, passing in different values each time.
+
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
 
 // EXERCISE: The Geometrizer
 
+
 // Create 2 functions that calculate properties of a circle, using the definitions here.
+calcCircumference = function(radius) {
+	var pi = 3.14;
+	return "The circumference is "+ pi * (radius*2) +".";
+}
 
-// Create a function called calcCircumfrence:
+calcCircumference(12)
 
-// Pass the radius to the function.
-// Calculate the circumference based on the radius, and output "The circumference is NN".
-// Create a function called calcArea:
+calcArea = function(radius) {
+ 	var pi = 3.14;
+ 	return "The area is "+ (radius*radius) * pi  +".";
+}
 
-// Pass the radius to the function.
-// Calculate the area based on the radius, and output "The area is NN".
+calcArea(12)
 
 // EXERCISE: The Temperature Converter
 
-// It's hot out! Let's make a converter based on the steps here.
+celsiusToFahrenheit = function(celsiustemp) {
+	var fahr_convert = (celsiustemp * 1.8) + 32;
+	var display = celsiustemp + " degrees celsius is " + fahr_convert + 
+	" degrees fahrenheit.";
+	return display
+}
+celsiusToFahrenheit(20)
+celsiusToFahrenheit(30)
+celsiusToFahrenheit(10)
 
-// Create a function called celsiusToFahrenheit:
 
-// Store a celsius temperature into a variable.
-// Convert it to fahrenheit and output "NN°C is NN°F".
-// Create a function called fahrenheitToCelsius:
+fahrenheitToCelsius = function(fahrtemp) {
+	var celsius_convert = (fahrtemp - 32) / 1.8;
+	var display = fahrtemp + " degrees fahrenheit is " + celsius_convert + 
+	" degrees celsius.";
+	return display
+}
+fahrenheitToCelsius (100)
+fahrenheitToCelsius (90)
+fahrenheitToCelsius (80)
 
-// Now store a fahrenheit temperature into a variable.
-// Convert it to celsius and output "NN°F is NN°C."
 
