@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>My book List</h1>
+
+	<script>
+		var books = ["book1", "book2", "book3"]
+
+		for (var i = 0; var < books.length; i += 1 ) {
+
+  		var bookP = document.createElement('p');
+  		var bookDescription = document.createTextNode(books[i].title + ' by ' + books[i].author);
+  		bookP.appendChild(bookDescription);
+  		document.body.appendChild(bookP);
+		}
+	</script>
+</body>
+
+
+</html>

@@ -1,34 +1,62 @@
 // Exercises: if/else statements
 
 // EXERCISE: What number's bigger?
+greaterNum = function(num1, num2) {
+	if (num1 > num2) {
+		return num1;
+	} else {
+		return num2;
+	}
+}
 
-// Write a function named greaterNum that:
-// takes 2 arguments, both numbers.
-// returns whichever number is the greater (higher) number.
-// Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10.").
+console.log(greaterNum(5, 10));
+ 
 
 // EXERCISE: The World Translator
+helloWorld = function(lang) {
+	if (lang == "jp") {
+		return "Ohayo sekaini wa";
+	} else if (lang == "fr") {
+		return "bonjour tout le monde";
+	} else {
+		return "hello world";
+	}
+}
 
-// Write a function named helloWorld that:
-// takes 1 argument, a language code (e.g. "es", "de", "en")
-// returns "Hello, World" for the given language, for atleast 3 languages. It should default to returning English.
-// Call that function for each of the supported languages and log the result to make sure it works.
+helloWorld("en")
+helloWorld("fr")
+helloWorld("jp")
 
 // EXERCISE: The Grade Assigner
+assignGrade = function(score) {
+	if (score > 80) {
+		return "A";
+	} else if (score > 70) {
+		return "B";
+	} else if (score > 70) {
+		return "C";
+	} else if (score > ) {
+		return "D";					
+	} else {
+		return "F";
+	}
+}
 
-// Write a function named assignGrade that:
-// takes 1 argument, a number score.
-// returns a grade for the score, either "A", "B", "C", "D", or "F".
-// Call that function for a few different scores and log the result to make sure it works.
+assignGrade("85")
+assignGrade("72")
+assignGrade("66")
+assignGrade("51")
+assignGrade("59")
 
 // EXERCISE: The Pluralizer
+pluralize = function(noun, number) {
+	if (number != 1 && noun != 'sheep') {
+		return noun + "s"
+    } else {
+        return number + ' ' + noun;
+    }
+}
 
-// Write a function named pluralize that:
-// takes 2 arguments, a noun and a number.
-// returns the number and pluralized form, like "5 cats" or "1 dog".
-// Call that function for a few different scores and log the result to make sure it works.
-// Bonus: Make it handle a few collective nouns like "sheep" and "geese".
-
-
-
-
+pluralize('cat', 0));
+pluralize('cat', 1));
+pluralize('cat', 2));

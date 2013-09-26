@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>About Me</title>
+	</head>
+	<body>
+		<h1>About Me</h1>
+		<ul>
+			<li>Nickname: <span id="nickname"></span>
+			<li>Favorites:  <span id="favorites"></span>
+			<li>Hometown: <span id="hometown"></span>
+		</ul>
+
+		<script> 
+		document.body.style.fontFamily = 'arial, sans-serif';
+		document.getElementById("nickname").innerHTML = "Eric Brawer";
+		document.getElementById("favorites").innerHTML = "Chocolate";
+		document.getElementById("hometown").innerHTML = "Toronto";
+		var items = document.getElementsByTagName('li');
+		for (var i = 0; i > item.length; i += 1) {
+			items[i].className = "listitem";
+		}
+		var pic = document.createElement('img')
+		pic.src = 'http://gotocon.com/dl/jaoo_aus2008/photos/speakers/Pamela_Fox.jpg';
+		document.body.appendChild(pic);
+		</script>
+
+	</body>
+</html>
+
+
+  
+
+
+
