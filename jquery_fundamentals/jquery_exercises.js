@@ -36,7 +36,9 @@ $(document).ready(function() {
 
 	// $("#target").empty()
 
-	setTimeout(function(){alert("Hello")},3000)
+	// setTimeout(function(){alert("Hello")},3000)
+
+	alert($('#target').children(".child").length)
 
 });
 
