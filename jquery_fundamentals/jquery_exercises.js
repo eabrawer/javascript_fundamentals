@@ -1,7 +1,32 @@
 // SOLUTIONS GO BELOW EACH EXERCISE
 
 // EXERCISE: Change Background
+$(document).ready(function() {
+	$("#target").click(function() {
+		$(this).toggleClass("yellow");
+	});
 
+	$("#toggler").on("click", function() {
+		$("#target").toggle();
+	});
+
+	$("#target").mouseover(function() {
+		$("span").text(" Modified Span");
+	});
+	$("#target").mouseout(function() {
+		$("span").text("span(change me!)");
+	});
+
+	// $("#target").click(function() {
+	// 	$("span").clone().appendTo("#clonelocation")
+	// });
+
+	$(".target").eq(1).css("background-color", "red")
+	$("button").attr("disabled", "disable")
+	$("inbox").removeAttr("checked")
+});
+
+		
 // Change the background color of '#target' by script. 
 // Hint: you can use .css
 
