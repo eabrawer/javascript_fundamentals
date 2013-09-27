@@ -34,7 +34,9 @@ $(document).ready(function() {
 	// 	height: "200px"
 	// })
 
-	$("div").empty()
+	// $("#target").empty()
+
+	setTimeout(function(){alert("Hello")},3000)
 
 });
 
