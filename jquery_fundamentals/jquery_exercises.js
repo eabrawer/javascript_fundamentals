@@ -24,6 +24,7 @@ $(document).ready(function() {
 	$(".target").eq(1).css("background-color", "red")
 	$("button").attr("disabled", "disable")
 	$("inbox").removeAttr("checked")
+	$("#child").appendTo("#parent2")
 });
 
 		
