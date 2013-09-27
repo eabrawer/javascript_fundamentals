@@ -22,9 +22,20 @@ $(document).ready(function() {
 	// });
 
 	$(".target").eq(1).css("background-color", "red")
+
 	$("button").attr("disabled", "disable")
+
 	$("inbox").removeAttr("checked")
+
 	$("#child").appendTo("#parent2")
+
+	$("div").css({
+		width: "300px",
+		height: "200px"
+	})
+
+	
+
 });
 
 		
