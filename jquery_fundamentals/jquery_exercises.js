@@ -29,12 +29,12 @@ $(document).ready(function() {
 
 	$("#child").appendTo("#parent2")
 
-	$("div").css({
-		width: "300px",
-		height: "200px"
-	})
+	// $("div").css({
+	// 	width: "300px",
+	// 	height: "200px"
+	// })
 
-	
+	$("div").empty()
 
 });
 
